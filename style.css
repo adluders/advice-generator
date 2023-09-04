@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+:root {
+  --light-cyan: #cee3e9;
+  --neon-green: #52ffa8;
+  --grayish-blue: #4e5d73;
+  --dark-grayish-blue: #323a49;
+  --dark-blue: #1f2632;
+  --font-size: 28px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--dark-blue);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.advice {
+  background-color: var(--dark-grayish-blue);
+  margin: auto;
+  max-width: 50%;
+  border-radius: 2rem;
+  padding: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.advice__header p {
+  color: var(--neon-green);
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.advice__content h1 {
+  color: var(--light-cyan);
+  text-align: center;
+}
+
+.advice__footer img {
+  width: 100%;
+}
+
+.advice__generator button {
+  padding: 1rem 1.2rem;
+  border-radius: 50%;
+  background-color: var(--neon-green);
+  border: none;
+  position: absolute;
+  left: 45%;
+  cursor: pointer;
+}
+
+.advice__generator button:hover,
+.advice__generator button:active {
+  -webkit-box-shadow: 0px 0px 24px 4px rgba(82, 255, 168, 0.79);
+  -moz-box-shadow: 0px 0px 24px 4px rgba(82, 255, 168, 0.79);
+  box-shadow: 0px 0px 24px 4px rgba(82, 255, 168, 0.79);
+}
+
+/* footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--light-cyan);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
