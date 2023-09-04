@@ -77,3 +77,12 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media screen and (max-width: 600px) {
+  .advice {
+    max-width: 90%;
+  }
+  .advice__content h1 {
+    font-size: 22px;
+  }
+}
